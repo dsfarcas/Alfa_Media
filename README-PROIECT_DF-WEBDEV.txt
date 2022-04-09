@@ -1,0 +1,7 @@
+DANIEL FARCAS
+Proiect realizat pentru WebDev: SITE DE PREZENTARE PENTRU AGENTIE DE GRAPHIC DESIGN
+
+Tehnologii folosite:
+HTML, CSS, BOOTSTRAP, JS, PHP, modelul MVC
+
+

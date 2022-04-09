@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app\css\stil.css" />
+  </head>
+
+  <body id="body bg-light">
+    <!-- HEADER + SUBHEADER + NAVBAR -->
+    <!-- <header class="row ">       -->
+    <!-- HEADER 1 -->
+    <div
+      class="d-flex align-items-stretch justify-content-center text-center text-white fw-bold bg-dark pt-3 pb-2"
+      style="letter-spacing: 40px; word-spacing: 100px; height: 50px"
+    >
+      <div>ALPHA</div>
+      <div>
+        <!-- Logo -->
+        <a href="home" target=""
+          ><img
+            class="social_logo pb-1"
+            src="app/img/LogoAlphaMedia7.png"
+            alt=""
+            width="65px"
+        /></a>
+      </div>
+      <div class="ps-5">MEDIA</div>
+    </div>
+    <!-- HEADER 2 -->
+    <div
+      class="row position-static bg-secondary pt-5"
+      style="letter-spacing: 40px; word-spacing: 100px"
+    ></div>
+    <!-- SOCIAL MEDIA + MENU + BUTTON -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container-fluid d-flex justify-content-between text-center">
+        <div class="row d-flex me-1">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="social_logo pr-10"
+              src="app/img/facebook_logo.png"
+              alt=""
+              width="20px"
+          /></a>
+        </div>
+        <div class="row d-flex me-1">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="social_logo"
+              src="app/img/twitter_logo.png"
+              alt=""
+              width="20px"
+          /></a>
+        </div>
+        <div class="row d-flex me-1">
+          <a href="https://www.facebook.com/" target="_blank"
+            ><img
+              class="social_logo"
+              src="app/img/instagram_logo.png"
+              alt=""
+              width="20px"
+          /></a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav fw-bold">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-dark"
+                aria-current="page"
+                href="home"
+                >HOME</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="products">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="portfolio">PORTFOLIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="contact">CONTACT</a>
+            </li>
+          </ul>
+          <a class="ms-auto" href="logout">Logout</a>
+
+          <!-- <button
+                  type="button"
+                  id="loginButton"
+                  class="btn btn-primary ms-auto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  action="login.php"
+                >
+                  Login
+                </button> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- </header>   -->
+
+    <main class="container mt-5">{{mainContent}}</main>
+
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white text-center text-lg-start">
+      <!-- Grid container -->
+      <div class="container-fluid p-4 pt-5 bg-dark">
+        <!--Grid row-->
+        <div class="d-flex flex-row justify-content-center">
+          <!--Grid column-->
+          <div class="col-3">
+            <h5 class="text-uppercase">informații</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a
+                  href="cumcomand"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Cum comand</a
+                >
+              </li>
+              <li>
+                <a
+                  href="cumcumpar"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Cum cumpăr</a
+                >
+              </li>
+              <li>
+                <a
+                  href="livrare"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Livrare</a
+                >
+              </li>
+              <li>
+                <a
+                  href="reclamatii"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Reclamații</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-3">
+            <h5 class="text-uppercase mb-0">utile</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="despre"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Despre noi</a
+                >
+              </li>
+              <li>
+                <a
+                  href="cariere"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Cariere</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Contactează-ne</a
+                >
+              </li>
+              <li>
+                <a
+                  href="confidentialitate"
+                  class="text-white"
+                  style="text-decoration: none"
+                  >Politica de confidențialitate</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-3">
+            <h5 class="text-uppercase">formular de contact</h5>
+
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input
+                type="name"
+                id="form5Example21"
+                placeholder="Numele"
+                class="form-control"
+              />
+              <label class="name" for="name">Nume</label>
+
+              <input
+                type="email"
+                id="form5Example21"
+                placeholder="Adresa ta de email"
+                class="form-control"
+              />
+              <label class="form-label" for="form5Example21">Email</label>
+
+              <textarea
+                class="form-control"
+                placeholder="Scrie-ne aici"
+                id="floatingTextarea"
+              ></textarea>
+              <label for="floatingTextarea">Mesajul tău</label>
+
+              <button class="btn btn-primary mt-2 d-flex" type="submit">
+                Trimite
+              </button>
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="d-flex flex-column pt-2" style="background-color: black">
+        <p class="d-flex justify-content-center">© 2021 Copyright:</p>
+        <p class="d-flex justify-content-center mb-0">Alpha Media</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

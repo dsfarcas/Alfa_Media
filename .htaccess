@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteRule ^([\w]+)$ ?page=$1 [L]
+
+IndexIgnore models controllers views css js errors img
+
+# redirectarea pentru erorile 404 (NOT FOUND) și 403 (FORBIDDEN ACCESS)
+ErrorDocument 404 /PROIECT_DF_WEBDEV/errors/error404.php
+ErrorDocument 403 /PROIECT_DF_WEBDEV/errors/error403.php

@@ -1,0 +1,116 @@
+/* TAGS */
+
+table, th, td {
+    border: 1px solid;
+  }
+
+
+table {
+    border-collapse: collapse;
+  }
+
+/* CLASSES */
+.container {
+    position: relative;
+    font-family: Arial;
+  } 
+  
+.text-block {
+    position: absolute;   
+    z-index: 2; 
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(206, 175, 175);
+    color: rgb(22, 21, 21);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* IDs */
+#container-potfolio {
+  background-color: #645757;
+}
+#loginButton, .btn {
+    border-radius: 20px;
+}
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;    
+}
+
+#formularContact1{
+    display:block;
+    justify-content:center;
+}
+
+#formularContact2{    
+    justify-content:center;
+}
+
+
+/* TABELA - CARIERE */
+#tabela {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tabela td, #tabela th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tabela tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tabela tr:hover {background-color: rgb(191, 203, 216);}
+  
+  #tabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #374c6b;
+    color: white;
+  }
+  #tabela td {
+      text-align: left;
+      color: black;
+  }
+
+
+  /* ==== */
+ /* VIDEO - CUM COMAND */
+ #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+ 
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #645757;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* IMAGINE - DESPRE */
+  .container {
+    position: relative;
+    text-align: justify;
+    color: black;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+ 
