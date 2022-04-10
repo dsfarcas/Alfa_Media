@@ -6,11 +6,10 @@ class UsersModel extends DBModel
     protected $email;
     protected $password;
 
-    public function __construct($userName='John', $userEmail='email', $pass='123'){
+    public function __construct($userName='', $userEmail='', $pass=''){
         $this->name = $userName;
         $this->email = $userEmail;
         $this->password = $pass;
-        // echo "TOTUL E OK!".__FILE__;
     }
 
     public function details(){
@@ -18,19 +17,7 @@ class UsersModel extends DBModel
                 . ' are e-mailul '
                 . $this->email;
     }
-
-    public function showUsers(){
-		$q = "SELECT * FROM	users_test";
-		$result = $this->db()->query($q);
-		return $result->fetch_all(MYSQLI_ASSOC);
-	}
-
-    public function delUser($id){
-		$q = "DELETE FROM `users_test` WHERE `id`= '$id' ";
-		$result = $this->db()->query($q);
-        return $result;
-	}
-
+   
     public function addUser($uName, $uEmail, $uPass){
 		$q = "INSERT INTO `users_test`(`userName`, `userEmail`, `hashedPass`) VALUES (?,?,?)";
         $myHash = password_hash($uPass, PASSWORD_DEFAULT);
@@ -56,6 +43,5 @@ class UsersModel extends DBModel
             }
             else return false;
         }
-        // return false;
     }
 }

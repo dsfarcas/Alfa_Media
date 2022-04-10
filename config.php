@@ -1,6 +1,6 @@
 <?php
 
-// defini constantele globale ale site-ului
+// definim constantele globale ale site-ului
 define('APP_PATH', 'app/'); // este accesibilia global
 define('MODELS', 'models/');
 define('VIEWS', 'views/');
